@@ -1,6 +1,6 @@
-package group.rookie.service;
+package group.rookie.api.service;
 
-import group.rookie.entity.User;
+import group.rookie.api.entity.User;
 
 /**
  * @ClassName UserService
@@ -10,5 +10,5 @@ import group.rookie.entity.User;
  * @Version 1.0
  **/
 public interface UserService {
-    User getUserById(String id);
+    User getUserById(long id);
 }

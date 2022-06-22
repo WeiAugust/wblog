@@ -1,5 +1,6 @@
 package group.rookie.wblogweb.controller;
 
+import group.rookie.wblogweb.vo.ResultVo;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @GetMapping("/test")
-    public String test() {
-        return "hello";
+    public ResultVo test() {
+        return ResultVo.SuccessResultVo("hello");
     }
 }
